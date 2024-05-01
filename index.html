@@ -4,11 +4,31 @@
     <title>418</title>
 
     <style>
-        img {
+        .placeholder {
+            width: 426px;
+            height: 426px;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+        }
+
+        .bg-image-blur, .bg-image {
+            background-image: url('./assets/who.jpg');
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 1rem;
+        }
+
+        .bg-image-blur {
+            -webkit-filter: blur(3rem);
+            -moz-filter: blur(3rem);
+            -o-filter: blur(3rem);
+            -ms-filter: blur(3rem);
+            filter: blur(3rem);
         }
 
         @media (prefers-color-scheme: dark) {
@@ -25,6 +45,9 @@
     </script>
   </head>
   <body>
-    <img src="./assets/who.jpg" alt="Who are you and how did you find me?" />
+    <div class="placeholder">
+        <div class="bg-image-blur"></div>
+        <div class="bg-image"></div>
+    </div>
   </body>
 </html>
