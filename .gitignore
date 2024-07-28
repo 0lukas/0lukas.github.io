@@ -119,6 +119,8 @@ out
 
 .nuxt
 dist
+!dist/index.html
+!dist/favicon.ico
 
 # Gatsby files
 
