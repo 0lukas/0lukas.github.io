@@ -1,16 +1,16 @@
 {
   "name": "0lukas.github.io",
   "module": "index.ts",
-  "type": "module",
-  "scripts": {
-    "start": "bun run src/index.ts",
-    "build": "bun build ./src/app.ts --outdir=./public --minify",
-    "dev": "bun run build && bun run src/index.ts"
-  },
   "devDependencies": {
     "@types/bun": "^1.1.6"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  }
+  },
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "build": "bun build ./src/app.ts --outdir=./public --minify",
+    "dev": "bun run build && bun run src/index.ts"
+  },
+  "type": "module"
 }
