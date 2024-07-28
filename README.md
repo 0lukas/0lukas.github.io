@@ -1,0 +1,13 @@
+# 0lukas.github.io
+
+To install dependencies:
+
+```bash
+bun install
+```
+
+To run:
+
+```bash
+bun run index.ts
+```
