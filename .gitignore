@@ -119,8 +119,6 @@ out
 
 .nuxt
 dist
-!dist/index.html
-!dist/favicon.ico
 
 # Gatsby files
 
@@ -175,3 +173,8 @@ dist
 
 # Finder (MacOS) folder config
 .DS_Store
+
+# Custom
+public/*
+!public/index.html
+!public/favicon.ico
