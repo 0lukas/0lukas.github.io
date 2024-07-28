@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "start": "bun run src/index.ts",
-    "build": "bun build ./src/index.ts --outdir=./dist"
+    "build": "bun build ./src/index.ts --outdir=./dist && cp src/index.html dist/index.html"
   },
   "devDependencies": {
     "@types/bun": "latest"
